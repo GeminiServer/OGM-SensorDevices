@@ -15,6 +15,10 @@
   #define PROG_LED_PIN                  25 // RGB BLUE GPIO25
   #define PROG_LED_PIN_ACTIVE_ON        LOW
   #define SAVE_INTERRUPT_PIN            10
+  #define KNX_UART_RX_PIN               1
+  #define KNX_UART_TX_PIN               0
+  //#define KNX_I2C_SDA_PIN 20
+  //#define KNX_I2C_SCL_PIN 21
 #endif
 #ifdef BOARD_SEEEDUINO_XIAO
   #define PROG_BUTTON_PIN               0 // GPIO26 ()
