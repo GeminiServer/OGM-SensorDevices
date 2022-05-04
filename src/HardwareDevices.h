@@ -8,6 +8,22 @@
 // ################################################
 // ### Board Configuration
 // ################################################
+
+#ifdef BOARD_SEEEDUINO_RP2040
+  #define PROG_BUTTON_PIN               26 // GPIO26 ()
+  #define PROG_BUTTON_PIN_INTERRUPT_ON  HIGH
+  #define PROG_LED_PIN                  25 // RGB BLUE GPIO25
+  #define PROG_LED_PIN_ACTIVE_ON        LOW
+  #define SAVE_INTERRUPT_PIN            10
+#endif
+#ifdef BOARD_SEEEDUINO_XIAO
+  #define PROG_BUTTON_PIN               0 // GPIO26 ()
+  #define PROG_BUTTON_PIN_INTERRUPT_ON  HIGH
+  #define PROG_LED_PIN                  PIN_LED // RGB BLUE GPIO25
+  #define PROG_LED_PIN_ACTIVE_ON        LOW
+  #define SAVE_INTERRUPT_PIN            10
+#endif
+
 #ifdef BOARD_DEVEL
 #define PROG_LED_PIN 26
 #define PROG_LED_PIN_ACTIVE_ON LOW
